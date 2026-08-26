@@ -1,0 +1,21 @@
+# Python缓存文件
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 虚拟环境
+interpreter library根目录/
+venv/
+env/
+
+# 数据集、模型、日志（数据不上传，代码全部上传）
+*.csv
+*.xlsx
+log/
+model/
+*.pkl
+
+# pycharm、系统文件
+.idea/
+.DS_Store
