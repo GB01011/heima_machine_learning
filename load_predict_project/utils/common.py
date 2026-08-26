@@ -16,6 +16,16 @@ def data_preprocessing():
     data['time'] = pd.to_datetime(data['time']).dt.strftime('%Y-%m-%d %H:%M:%S')
     print(data.head())
 
+    # 3.按照时间升序排列
+    data.sort_values('time', ascending=True, inplace=True)
+
+    # 4.去重
+    data.drop_duplicates(inplace=True)
+
+    # 5.打印和返回
+    print(data)
+    return data
+
 
 if __name__ == '__main__':
     data_preprocessing()
